@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bamboo Bolt - Din Kurv</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <img src="image/logo-Photoroom.png" alt="Bamboo Bolt Logo" class="logo">
+        <div class="menu">
+            <a href="index.html">Forside</a>
+            <a href="produkter.html">Produkter</a>
+            <a href="formaal.html">Vores formål</a>
+            <a href="kurv.html">Kurv <span id="cart-count"></span></a>
+            <a href="kontakt.html">Kontakt</a>
+        </div>
+    </nav>
+
+    <!-- Kurv -->
+    <section id="kurv">
+        <h2>Din Kurv</h2>
+        <div class="kurv-container">
+            <div id="cart-items" class="kurv-empty">
+                Din kurv er tom. Tilføj nogle produkter! 🛒
+            </div>
+            <div class="kurv-actions">
+                <button class="clear-btn" onclick="clearCart()">Tøm kurv</button>
+                <button class="checkout-btn hidden" id="checkout-btn" onclick="goToCheckout()">Gå til betaling</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Bamboo Bolt - Pandadrevne el-biler siden 2024</p>
+        <p>🐼 ⚡ 🌱</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

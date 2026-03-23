@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bamboo Bolt - Produkter</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <img src="image/logo-Photoroom.png" alt="Bamboo Bolt Logo" class="logo">
+        <div class="menu">
+            <a href="index.html">Forside</a>
+            <a href="produkter.html">Produkter</a>
+            <a href="formaal.html">Vores formål</a>
+            <a href="kurv.html">Kurv <span id="cart-count"></span></a>
+            <a href="kontakt.html">Kontakt</a>
+        </div>
+    </nav>
+
+    <!-- Produkter -->
+    <section id="produkter">
+        <h2>Vores Produkter</h2>
+        <div class="produkt-grid">
+            <div class="produkt-card">
+                <div class="produkt-icon">🌿</div>
+                <h3>Fiat Panda<br>(Grøn bambus)</h3>
+                <p>Klassisk grøn Fiat Panda ombygget til el-bil med bambus-inspireret interiør.</p>
+                <p class="price">Fra 150.000 kr</p>
+                <button onclick="addToCart('Fiat Panda (Grøn bambus)')">Tilføj til kurv</button>
+            </div>
+            
+            <div class="produkt-card">
+                <div class="produkt-icon">🪵</div>
+                <h3>Fiat Panda<br>(Brun bambus)</h3>
+                <p>Varm brun Fiat Panda med naturlige trædetaljer og elektrisk motor.</p>
+                <p class="price">Fra 155.000 kr</p>
+                <button onclick="addToCart('Fiat Panda (Brun bambus)')">Tilføj til kurv</button>
+            </div>
+            
+            <div class="produkt-card">
+                <div class="produkt-icon">📦</div>
+                <h3>Bamboo Bolt<br>Merch Box</h3>
+                <p>Eksklusiv merchandise pakke med Bamboo Bolt swag og goodies.</p>
+                <p class="price">499 kr</p>
+                <button onclick="addToCart('Bamboo Bolt Merch Box')">Tilføj til kurv</button>
+            </div>
+
+            <div class="produkt-card">
+                <div class="produkt-icon">🔧</div>
+                <h3>Service Pakke</h3>
+                <p>Årlig service og vedligeholdelse af din el-Panda med pandagaranti.</p>
+                <p class="price">2.500 kr/år</p>
+                <button onclick="addToCart('Service Pakke')">Tilføj til kurv</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Bamboo Bolt - Pandadrevne el-biler siden 2024</p>
+        <p>🐼 ⚡ 🌱</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
